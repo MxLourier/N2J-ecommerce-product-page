@@ -1,0 +1,215 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FF7E1B;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 48px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1D2026;
+}
+
+header {
+  width: 1110px;
+  height: 50px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative; /*position added to use absolute positioning for child elemets */
+}
+
+hr {
+  width: 1110px;
+  background-color: #E4E9F2;
+  height: 1px;
+  border-style: none;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #69707D;
+}
+
+button {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #FF7E1B;
+  border-style: none;
+  border-radius: 10px;
+  width: 272px;
+  height: 56px;
+  color: white;
+}
+
+#logo{
+  width: 137.5px;
+  height: 20px;
+  float: left;
+  position: absolute;
+  top: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 397px;
+  height: 26px;
+  position: absolute;
+  left: 195px;
+  bottom: 28px;
+}
+
+.navbar p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #69707D;
+}
+
+#cart-grey {
+ width: 21.82px;
+ height: 20px;
+ position: absolute;
+ top:15px;
+ right: 97px;
+}
+
+#avatar {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.container-main {
+  width: 1015px;
+  margin: auto;
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-left {
+  width: 43.8%;
+}
+
+.container-left img{
+  width: 100%;
+  border-radius: 3.4%;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.thumbnails img{
+  border-radius: 11.4%;
+  width: 19.8%;
+}
+
+.container-right {
+  width: 43.8%;
+  height: 75.4%;
+  margin: auto;
+  margin-right: 0;
+  position: relative;
+}
+
+.container-right h1{
+  margin-top: -3px;
+  margin-bottom: -13px;
+}
+
+.container-right p{
+  margin-bottom: 20px;
+}
+
+.container-right h3{
+  display: inline;
+}
+
+.container-right button{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.container-right button svg{
+  margin-right: 12px;
+  position: relative;
+  top: 5px;
+}
+
+ .sale {
+  display: inline-block;
+  position: relative;
+  left: 12px;
+  bottom: 4px;
+  width: 51px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #FFEEE2;
+  color: #FF7E1B;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.old-price {
+  width: 63px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B6BCC8;
+  text-decoration: line-through;
+  margin-top: 5px;
+}
+
+.amount {
+  width: 157px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: #F6F8FD;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#minus {
+  width: 12px;
+  height: 3.33px;
+}
+
+#plus{
+  width: 12px;
+  height: 12px;
+}
+
+.amount-number {
+  font-weight: 700;
+}
+
+button svg path{
+  fill: white;
+}
