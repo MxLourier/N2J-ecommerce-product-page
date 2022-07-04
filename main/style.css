@@ -239,23 +239,29 @@ button {
   margin-left: 0;
 }
 
-.container-left>img{
+.container-left>img, .lightbox-content>img{
   display: none;
   width: 100%;
   border-radius: 3.4%;
 }
 
-.container-left>img:first-child{
+.container-left>img:first-child, .lightbox-content>img:first-child{
   display: inline; /*default image chosen */
 }
 
-.thumbnails {
+.thumbnails, .thumbnails-lightbox {
   display: flex;
   justify-content: space-between;
   margin-top: 5.6%;
 }
 
-.thumbnails button{
+.thumbnails-lightbox{
+  width: 80%;
+  margin: auto;
+  margin-top: 6.5%;
+}
+
+.thumbnails button, .thumbnails-lightbox button{
   border-style: none;
   border-color: #FF7E1B;
   border-width: 2px;
@@ -265,6 +271,7 @@ button {
   background-color: white;
 }
 
+
  .thumbnails button:first-child{
    border-style: solid;
  }
@@ -273,11 +280,7 @@ button {
    opacity: 0.25;
  }
 
- .thumbnails:autofocus{
-   outline-style: none;
- }
-
-.thumbnails img{
+.thumbnails img, .thumbnails-lightbox img{
   width: 100%;
   height: 100%;
   border-radius: 11.4%;
@@ -424,6 +427,79 @@ input[type=number] {
 button svg path{
   fill: white;
 }
+
+.lightbox {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 130%;
+}
+
+.container-lightbox {
+  width: 38.19%;
+  max-width: 550px;
+  min-width: 401px;
+  margin: auto;
+  margin-top: 79px;
+  padding-top: 35px;
+  position: relative;
+}
+
+.container-lightbox svg path:hover{
+  fill: #FF7E1B;
+}
+
+.container-lightbox svg{
+  transform: scale(1.333);
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+.container-lightbox svg path{
+  fill: white;
+}
+
+.lightbox-content {
+  color: white;
+  width: 100%;
+  margin: auto;
+}
+
+#prev, #next {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: white;
+  border-style: none;
+  position: absolute;
+  top: 37%;
+}
+
+#prev{
+  left: -28px;
+}
+
+#next{
+  right: -28px;
+}
+
+#prev svg, #next svg{
+  margin: 16px;
+}
+
+#prev svg{
+  margin-right: 22px;
+}
+
+
+
+
 
 
 @media screen and (max-width: 1264px) {
