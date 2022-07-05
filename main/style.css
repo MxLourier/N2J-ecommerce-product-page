@@ -804,9 +804,8 @@ button svg path{
    background-color: rgba(0, 0, 0, 0.75);
    z-index: 3;
    width: 100%;
-   /* max-width: 375px; */
-   height: 160%;
-   position: absolute;
+   height: 100%;
+   position: fixed;
    top:0;
    left: 0;
  }
