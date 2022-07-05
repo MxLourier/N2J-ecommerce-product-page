@@ -510,7 +510,7 @@ button svg path{
   display: none;
 }
 
-@media screen and (max-width: 1264px) and (min-width: 276px) {
+@media screen and (max-width: 1264px) and (min-width: 376px) {
   .amount {
     margin: auto;
     margin-bottom: 5px;
@@ -528,7 +528,7 @@ button svg path{
 /*                          mobile view       */
 
 
-@media screen and (max-width: 275px) {
+@media screen and (max-width: 375px) {
 
   h1 {
     font-size: 12px;
