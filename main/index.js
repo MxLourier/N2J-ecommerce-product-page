@@ -79,9 +79,12 @@ function cartToggle() {
   if (cartOpen) {
     cart.style.display = "none";
     cartOpen = false;
+    this.querySelector("path").setAttribute("fill", "#69707D");
+
   } else {
     cart.style.display = "inline";
     cartOpen = true;
+    this.querySelector("path").setAttribute("fill", "#1D2026");
   }
 }
 
@@ -288,3 +291,16 @@ function arrowNext() {
   }
   thumbnailsLightbox[k].focus();
 }
+
+//////////// Mobile menu functionality
+
+let closeMenu = document.querySelector(".menu-mobile-content img");
+let openMenu = document.getElementById("icon-menu");
+
+openMenu.addEventListener("click", ()=>{
+  document.querySelector(".menu-mobile").style.display = "block";
+})
+
+closeMenu.addEventListener("click", ()=>{
+  document.querySelector(".menu-mobile").style.display = "none";
+})
