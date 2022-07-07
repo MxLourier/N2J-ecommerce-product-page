@@ -10,6 +10,7 @@ const addButton = document.getElementById("add-button");
 var k = 0; //Index of current image, will be used for arrow functionality
 
 
+
 addButton.disabled = true;
 //default amount is 0, that's why the add button is disabled  by default
 
@@ -291,6 +292,37 @@ function arrowNext() {
   }
   thumbnailsLightbox[k].focus();
 }
+
+///////// Mobile arrows functionality
+
+let arrowsMobile = document.querySelectorAll(".arrows-mobile");
+var q=0; //Default image
+
+arrowsMobile[0].addEventListener("click", mobilePrev);
+arrowsMobile[1].addEventListener("click", mobileNext);
+
+function mobilePrev() {
+  if(q>0){
+    q--;
+    for(let i=0; i<images.length; i++){
+      images[i].style.display = "none";
+    }
+    images[q].style.display = "inline";
+  }
+}
+
+function mobileNext() {
+  if(q<(images.length - 1)){
+    q++;
+    for(let i=0; i<images.length; i++){
+      images[i].style.display = "none";
+    }
+    images[q].style.display = "inline";
+  }
+}
+
+
+
 
 //////////// Mobile menu functionality
 
